@@ -49,8 +49,12 @@
                                 </li>
                             @endif
                         @else
+                        
                         <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('CreatePost') }}">{{ __('Create Exibition') }}</a>
+                                    <a class="nav-link" href="{{ route('home') }}">{{ __('the exhibition') }}</a>
+                                </li>
+                        <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('create_post') }}">{{ __('Create Exibition') }}</a>
                                 </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

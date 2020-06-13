@@ -16,13 +16,14 @@
             type="text"
             class="form-control"
             id="title"
+            name="title"
             placeholder="Post Title"
             required
           />
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Post Content</label>
-          <textarea v-model="body" class="form-control" id="post-content" rows="3" required></textarea>
+          <textarea v-model="body" class="form-control" id="post-content" name="body" rows="3" required></textarea>
         </div>
         <div class>
           <el-upload
@@ -108,7 +109,7 @@ export default {
       this.imageList.push(file);
       this.dialogVisible = true;
     },
-    createPost(e) {
+    CreatePost(e) {
       e.preventDefault();
       if (!this.validateForm()) {
         return false;
