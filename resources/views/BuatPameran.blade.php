@@ -2,10 +2,8 @@
 
 @section('content')
 <div class="container">
-  <div class="row">
-    <div class="col-md-6">
+    <div>
       <create-post />
     </div>
-  </div>
 </div>
 @endsection

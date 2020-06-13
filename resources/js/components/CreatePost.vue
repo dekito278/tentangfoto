@@ -1,6 +1,6 @@
 <template>
   <div class="card mt-4" :key="componentKey">
-    <div class="card-header">New Post</div>
+    <div class="card-header">Buat Pameran</div>
     <div class="card-body">
       <div
         v-if="status_msg"
@@ -10,20 +10,20 @@
       >{{ status_msg }}</div>
       <form>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Title</label>
+          <label for="exampleFormControlInput1">Judul</label>
           <input
             v-model="title"
             type="text"
             class="form-control"
             id="title"
             name="title"
-            placeholder="Post Title"
+            placeholder="Masukkan judul pameran"
             required
           />
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Post Content</label>
-          <textarea v-model="body" class="form-control" id="post-content" name="body" rows="3" required></textarea>
+          <label for="exampleFormControlTextarea1">Deskripsi</label>
+          <textarea v-model="body" class="form-control" id="post-content" name="body" placeholder="Masukan deskripsi pameran" rows="3" required></textarea>
         </div>
         <div class>
           <el-upload
