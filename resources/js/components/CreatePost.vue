@@ -1,6 +1,6 @@
 <template>
   <div class="card mt-4" :key="componentKey">
-    <div class="card-header">Buat Pameran</div>
+    <div class="card-header">Buat pameran</div>
     <div class="card-body">
       <div
         v-if="status_msg"
@@ -16,14 +16,13 @@
             type="text"
             class="form-control"
             id="title"
-            name="title"
             placeholder="Masukkan judul pameran"
             required
           />
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Deskripsi</label>
-          <textarea v-model="body" class="form-control" id="post-content" name="body" placeholder="Masukan deskripsi pameran" rows="3" required></textarea>
+          <label for="exampleFormControlTextarea1">Deskripsi pameran</label>
+          <textarea v-model="body" class="form-control" id="post-content" rows="3" required></textarea>
         </div>
         <div class>
           <el-upload
@@ -46,7 +45,7 @@
         type="button"
         @click="createPost"
         class="btn btn-success"
-      >{{ isCreatingPost ? "Posting..." : "Create Post" }}</button>
+      >{{ isCreatingPost ? "Proses..." : "Buat pameran" }}</button>
     </div>
   </div>
 </template>
@@ -80,7 +79,6 @@
 <script>
 import { setTimeout } from "timers";
 import { mapState, mapActions } from "vuex";
-
 export default {
   name: "create-post",
   props: ["posts"],
@@ -109,7 +107,7 @@ export default {
       this.imageList.push(file);
       this.dialogVisible = true;
     },
-    CreatePost(e) {
+    createPost(e) {
       e.preventDefault();
       if (!this.validateForm()) {
         return false;
@@ -117,14 +115,11 @@ export default {
       const that = this;
       this.isCreatingPost = true;
       let formData = new FormData();
-
       formData.append("title", this.title);
       formData.append("body", this.body);
-
       $.each(this.imageList, function(key, image) {
         formData.append(`images[${key}]`, image);
       });
-
       api
         .post("/post/create_post", formData, {
           headers: { "Content-Type": "multipart/form-data" }

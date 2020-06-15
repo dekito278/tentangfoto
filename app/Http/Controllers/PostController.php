@@ -22,12 +22,12 @@ class PostController extends Controller
     public function createPost(Request $request)
     {
         DB::transaction(function () use ($request) {
-            $user = Auth::user();
+            $user = Auth::  user();
             $title = $request->title;
             $body = $request->body;
             $images = $request->images;
             
-            $post = Post::create([
+            $post =Post::create([
                 'title' => $title,
                 'body' => $body,
                 'user_id' => $user->id,
@@ -41,8 +41,9 @@ class PostController extends Controller
                     'post_id' => $post->id
                 ]);
             }
-            dd($request->all());
+            
         });
         return response()->json(200);
     }
+
 }
