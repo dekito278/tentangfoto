@@ -23,6 +23,8 @@
         </div>
         <hr>
         <p>{{ currentPost.body }}</p>
+        <p class="text-center">beri penilaian pameran ini
+        <rate :length="5" showcount="true" /></p>
       </span>
       <span slot="footer" class="dialog-footer">
         <el-button type="primary" @click="postDialogVisible = false">Close</el-button>

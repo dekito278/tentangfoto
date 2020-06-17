@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('Contact', 'ContactController@Contact')->name('Contact');
+Route::post('Contact', 'ContactController@sendMail');
 
 Auth::routes();
 
@@ -26,10 +28,6 @@ Route::group(['middleware' => 'auth', 'prefix' => 'post'], function () {
 Route::get('post/create_post', function () {
     return view('BuatPameran');
 });
-
-
-
-
 
 Route::get('/Config', 'ConfigController@index');
 
