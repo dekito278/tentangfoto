@@ -1,5 +1,4 @@
 <template >
-
   <div class="row">
     <div class="col-md-4" v-for="(post, i) in posts" :key=i>
       <div class="card mt-4">
@@ -23,8 +22,9 @@
         </div>
         <hr>
         <p>{{ currentPost.body }}</p>
-        <p class="text-center">beri penilaian pameran ini
-        <rate :length="5" showcount="true" /></p>
+        <h4 class="text-center font-weight-light">beri penilaian pameran ini</h4>
+        <p class="text-center">
+        <rate :length="5" v-model="rate" @click="rate" />anda memberikan {{rate}} bintang</p>
       </span>
       <span slot="footer" class="dialog-footer">
         <el-button type="primary" @click="postDialogVisible = false">Close</el-button>

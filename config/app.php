@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'BlogCafé'),
+    'name' => env('APP_NAME', 'StoryPhoto'),
 
     /*
     |--------------------------------------------------------------------------
@@ -161,6 +161,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        willvincent\Rateable\RateableServiceProvider::class,
+
 
         /*
          * Package Service Providers...

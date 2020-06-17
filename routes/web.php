@@ -32,3 +32,10 @@ Route::get('post/create_post', function () {
 Route::get('/Config', 'ConfigController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//rate
+Route::get('rates', 'HomeController@rates')->name('rates');
+
+Route::post('rates', 'HomeController@postPost')->name('rates.post');
+
+Route::get('rates/{id}', 'HomeController@show')->name('rates.show');
