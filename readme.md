@@ -1,2 +1,2 @@
 # tentangfoto
-StoryPhoto adalah webapp untuk memajang karya fotografi
+Tentangfoto adalah webapp untuk memajang karya fotografi
