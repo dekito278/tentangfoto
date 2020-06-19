@@ -12,5 +12,15 @@ class ContactController extends Controller
     {
        return View('Contact');
     }
+    
+    public function About()
+    {
+       return View('About');
+    }
+
+    public function Panduan()
+    {
+       return View('Panduan');
+    }
 
 }

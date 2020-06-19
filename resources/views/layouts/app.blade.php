@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
     <title>{{ config('app.name', 'StoryPhoto') }}</title>
 
     <!-- Scripts -->
@@ -15,7 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+   
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -50,7 +50,7 @@
                             @endif
                         @else
                         <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('Contact') }}">{{ __('Application abuse') }}</a>
+                                    <a class="nav-link" href="{{ route('About') }}">{{ __('About us') }}</a>
                                 </li>
                         <li class="nav-item">
                                     <a class="nav-link" href="{{ route('home') }}">{{ __('Pameran') }}</a>
@@ -87,5 +87,8 @@
             @yield('content')
         </main>
     </div>
+    <footer class="row">
+    
+    </footer>
 </body>
 </html>

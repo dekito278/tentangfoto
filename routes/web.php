@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Contact', 'ContactController@Contact')->name('Contact');
-Route::post('Contact', 'ContactController@sendMail');
+Route::get('Panduan', 'ContactController@Panduan')->name('Panduan');
+
+Route::get('About', 'ContactController@About')->name('About');
+
+
+
 
 Auth::routes();
 
@@ -33,9 +37,3 @@ Route::get('/Config', 'ConfigController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//rate
-Route::get('rates', 'HomeController@rates')->name('rates');
-
-Route::post('rates', 'HomeController@postPost')->name('rates.post');
-
-Route::get('rates/{id}', 'HomeController@show')->name('rates.show');

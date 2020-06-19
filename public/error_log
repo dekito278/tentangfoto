@@ -1,0 +1,16 @@
+[18-Jun-2020 12:41:20 Asia/Jakarta] PHP Warning:  require_once(/home/stok8219/public_html/storyphoto/bootstrap/app.php): failed to open stream: No such file or directory in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:41:20 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/stok8219/public_html/storyphoto/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:41:23 Asia/Jakarta] PHP Warning:  require_once(/home/stok8219/public_html/storyphoto/bootstrap/app.php): failed to open stream: No such file or directory in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:41:23 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/stok8219/public_html/storyphoto/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:41:24 Asia/Jakarta] PHP Warning:  require_once(/home/stok8219/public_html/storyphoto/bootstrap/app.php): failed to open stream: No such file or directory in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:41:24 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/stok8219/public_html/storyphoto/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:41:25 Asia/Jakarta] PHP Warning:  require_once(/home/stok8219/public_html/storyphoto/bootstrap/app.php): failed to open stream: No such file or directory in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:41:25 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/stok8219/public_html/storyphoto/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:43:14 Asia/Jakarta] PHP Warning:  require_once(/home/stok8219/public_html/storyphoto/bootstrap/app.php): failed to open stream: No such file or directory in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:43:14 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/stok8219/public_html/storyphoto/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:45:39 Asia/Jakarta] PHP Warning:  require_once(/home/stok8219/public_html/storyphoto/bootstrap/app.php): failed to open stream: No such file or directory in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:45:39 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required '/home/stok8219/public_html/storyphoto/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/stok8219/public_html/index.php on line 38
+[18-Jun-2020 12:47:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function bind() in /home/stok8219/public_html/index.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/stok8219/public_html/index.php on line 41

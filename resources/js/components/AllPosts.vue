@@ -11,20 +11,19 @@
         <button class="btn btn-success m-2" @click="viewPost(i)">Lihat pameran</button>
       </div>
     </div>
-    <el-dialog v-if="currentPost" :visible.sync="postDialogVisible" width="65%">
+    <el-dialog v-if="currentPost" :visible.sync="postDialogVisible" width="85%">
       <span>
-        <p class="text-center font-weight-light">Judul pameran</p>
         <h3 class="text-center font-italic">"{{ currentPost.title }}"</h3>
-        <div class="row">
-          <div class="col-md-8 text-center" v-for="(img, i) in currentPost.post_images" :key=i>
+        <v-row class="justify-center align-center">
+          <div class="text-center " style="text-align:center" v-for="(img, i) in currentPost.post_images" :key=i>
             <img :src="img.post_image_path" alt="Foto-pameris" class="img-thumbnail" >
           </div>
-        </div>
+       </v-row>
         <hr>
         <p>{{ currentPost.body }}</p>
         <h4 class="text-center font-weight-light">beri penilaian pameran ini</h4>
         <p class="text-center">
-        <rate :length="5" v-model="rate" @click="rate" />anda memberikan {{rate}} bintang</p>
+        <rate :length="5" v-model="rate"/>anda memberikan {{rate}} bintang</p>
       </span>
       <span slot="footer" class="dialog-footer">
         <el-button type="primary" @click="postDialogVisible = false">Close</el-button>

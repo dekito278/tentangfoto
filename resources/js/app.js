@@ -17,12 +17,13 @@ Vue.use(ElementUI);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('create-post', require('./components/CreatePost.vue').default);
 Vue.component('all-posts', require('./components/AllPosts.vue').default);
-Vue.component('footer-web', require('./components/footer.vue').default);
-
+Vue.component('about-web', require('./components/About.vue').default);
+Vue.component('panduan-web', require('./components/Panduan.vue').default);
 
 const app = new Vue({
     store,
     el: '#app',
+    
     data: {
         rate: ''
   },
