@@ -19,9 +19,6 @@ Route::get('Panduan', 'ContactController@Panduan')->name('Panduan');
 
 Route::get('About', 'ContactController@About')->name('About');
 
-
-
-
 Auth::routes();
 
 Route::group(['middleware' => 'auth', 'prefix' => 'post'], function () {
